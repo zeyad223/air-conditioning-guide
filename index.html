@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موسوعة التكييف العربي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>موسوعة التكييف العربي</h1>
+    <p>شرح أجزاء التكييف وأعطاله ودورة التبريد</p>
+</header>
+
+<section class="search">
+    <input
+        type="text"
+        id="searchBox"
+        placeholder="ابحث عن أي شيء في التكييف">
+    <button onclick="searchPage()">بحث</button>
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h2><a href="compressor.html">الكباس</a></h2>
+        <p>شرح الكباس وأشهر أعطاله.</p>
+    </div>
+
+    <div class="card">
+        <h2><a href="condenser.html">المكثف</a></h2>
+        <p>شرح المكثف ووظيفته.</p>
+    </div>
+
+    <div class="card">
+        <h2><a href="capillary.html">الماسورة الشعرية</a></h2>
+        <p>شرح الكابلري وطريقة عمله.</p>
+    </div>
+
+    <div class="card">
+        <h2><a href="evaporator.html">المبخر</a></h2>
+        <p>شرح المبخر وأهميته.</p>
+    </div>
+
+    <div class="card">
+        <h2><a href="cycle.html">دورة التبريد</a></h2>
+        <p>شرح دورة التكييف الميكانيكية بالكامل.</p>
+    </div>
+<div class="card">
+    <h2><a href="inverter.html">تكنولوجيا الإنفرتر</a></h2>
+    <p>شرح كامل لتكييف الإنفرتر ومكوناته وأعطاله.</p>
+</div>
+
+    <div class="card">
+        <h2><a href="faults.html">الأعطال الشائعة</a></h2>
+        <p>أشهر أعطال التكييف وأسبابها.</p>
+    </div>
+
+    <div class="card">
+        <h2><a href="error-codes.html">أكواد الأعطال</a></h2>
+        <p>أكواد أعطال شارب وكاريير ويونيون إير وفريش.</p>
+        </div>
+        <div class="card">
+    <h2><a href="inverter-faults.html">أعطال الإنفرتر</a></h2>
+    <p>شرح أكواد وأعطال تكييف الإنفرتر وطرق تشخيصها.</p>
+    </div>
+    
+     </div>
+</div>
+    <div class="card">
+        <h2><a href="freon-calculator.html">حاسبة شحن الفريون</a></h2>
+        <p>اعرف الضغط الطبيعي لكل نوع فريون.</p>
+        </div>
+        <div class="card">
+    <h2><a href="diagnosis.html">تشخيص الأعطال</a></h2>
+    <p>اعرف أسباب أعطال التكييف الشائعة.</p>
+    </div>
+    <div class="card">
+    <h2><a href="electric-faults.html">أعطال الكهرباء</a></h2>
+    <p>شرح أعطال الكابستور والأوفرلود والكونتاكتور والفيوز وحساس الحرارة.</p>
+</div>
+</div>
+    </div>
+
+</section>
+
+<script>
+function searchPage(){
+
+    let q =
+    document.getElementById("searchBox")
+    .value
+    .toLowerCase();
+
+    if(q.includes("كباس")){
+        window.location.href="compressor.html";
+    }
+
+    else if(q.includes("مكثف")){
+        window.location.href="condenser.html";
+    }
+
+    else if(q.includes("مبخر")){
+        window.location.href="evaporator.html";
+    }
+
+    else if(
+        q.includes("كابلري") ||
+        q.includes("ماسورة شعرية")
+    ){
+        window.location.href="capillary.html";
+    }
+
+    else if(
+        q.includes("دورة التبريد") ||
+        q.includes("دورة التكييف")
+    ){
+        window.location.href="cycle.html";
+    }
+
+    else if(
+        q.includes("عطل") ||
+        q.includes("اعطال")
+    ){
+        window.location.href="faults.html";
+    }
+
+    else if(
+        q.includes("اكواد") ||
+        q.includes("شارب") ||
+        q.includes("كاريير") ||
+        q.includes("يونيون")
+    ){
+        window.location.href="error-codes.html";
+    }
+
+    else if(
+        q.includes("فريون") ||
+        q.includes("ضغط")
+    ){
+        window.location.href="freon-calculator.html";
+    }
+
+    else{
+        alert("لم يتم العثور على نتيجة.");
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>تشخيص أعطال التكييف</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>تشخيص أعطال التكييف</h1>
+<p>اختر العطل لمعرفة الأسباب المحتملة</p>
+</header>
+
+<div class="card">
+
+<select id="fault">
+    <option value="">اختر العطل</option>
+    <option value="cool">التكييف لا يبرد</option>
+    <option value="outside">الوحدة الخارجية لا تعمل</option>
+    <option value="water">نزول مياه من الوحدة الداخلية</option>
+    <option value="noise">صوت عالي في التكييف</option>
+    <option value="freeze">تجمد المبخر</option>
+</select>
+
+<br><br>
+
+<button onclick="diagnose()">
+تشخيص العطل
+</button>
+
+<div id="result" style="margin-top:20px;"></div>
+
+</div>
+
+<script>
+function diagnose(){
+
+let fault =
+document.getElementById("fault").value;
+
+let result =
+document.getElementById("result");
+
+if(fault==="cool"){
+result.innerHTML=
+"<h3>الأسباب المحتملة:</h3><ul><li>نقص فريون.</li><li>اتساخ الفلاتر.</li><li>ضعف المكثف.</li><li>عطل بالمروحة.</li></ul>";
+}
+
+else if(fault==="outside"){
+result.innerHTML=
+"<h3>الأسباب المحتملة:</h3><ul><li>فصل أوفرلود.</li><li>تلف الكابستور.</li><li>عدم وصول كهرباء.</li><li>عطل بالكونتاكتور.</li></ul>";
+}
+
+else if(fault==="water"){
+result.innerHTML=
+"<h3>الأسباب المحتملة:</h3><ul><li>انسداد خرطوم الصرف.</li><li>اتساخ المبخر.</li><li>ميل الوحدة الداخلية غير صحيح.</li></ul>";
+}
+
+else if(fault==="noise"){
+result.innerHTML=
+"<h3>الأسباب المحتملة:</h3><ul><li>مسمار مفكوك.</li><li>تلف رولمان البلي.</li><li>اهتزاز المروحة.</li></ul>";
+}
+
+else if(fault==="freeze"){
+result.innerHTML=
+"<h3>الأسباب المحتملة:</h3><ul><li>نقص فريون.</li><li>اتساخ الفلاتر.</li><li>ضعف مروحة الوحدة الداخلية.</li></ul>";
+}
+
+else{
+result.innerHTML=
+"اختر عطلاً أولاً.";
+}
+
+}
+</script>
+
+</body>
+</html>

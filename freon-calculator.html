@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>حاسبة شحن الفريون</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>حاسبة شحن الفريون</h1>
+    <p>اختر نوع الفريون لمعرفة الضغط الطبيعي</p>
+</header>
+
+<div class="card">
+
+    <h2>اختر نوع الفريون</h2>
+
+    <select id="freonType">
+        <option value="">اختر نوع الفريون</option>
+        <option value="R22">R22</option>
+        <option value="R410A">R410A</option>
+        <option value="R32">R32</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="showPressure()">
+        إظهار الضغط
+    </button>
+
+    <h2 id="result"></h2>
+
+</div>
+
+<script>
+function showPressure() {
+
+    let type = document.getElementById("freonType").value;
+    let result = document.getElementById("result");
+
+    if (type === "R22") {
+        result.innerHTML = "الضغط الطبيعي لفريون R22 هو 60 - 70 PSI";
+    }
+    else if (type === "R410A") {
+        result.innerHTML = "الضغط الطبيعي لفريون R410A هو 110 - 130 PSI";
+    }
+    else if (type === "R32") {
+        result.innerHTML = "الضغط الطبيعي لفريون R32 هو 120 - 140 PSI";
+    }
+    else {
+        result.innerHTML = "اختر نوع الفريون أولاً";
+    }
+}
+</script>
+
+</body>
+</html>
