@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zeyad223.github.io/air-conditioning-guide/sitemap.xml
