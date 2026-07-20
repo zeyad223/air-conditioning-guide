@@ -2,16 +2,122 @@
 <html lang="ar" dir="rtl">
 
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ملفات PDF - دورات شركات التكييف</title>
+<title>دورات شركات التكييف PDF</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
 
-<link rel="icon" href="logo.png">
+body{
+margin:0;
+font-family:Tahoma;
+background:#f4f6f9;
+}
+
+header{
+background:#0d6efd;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:32px;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:25px;
+
+padding:35px;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:18px;
+
+padding:30px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+transition:.3s;
+
+text-align:center;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.card img{
+
+width:180px;
+
+height:120px;
+
+object-fit:contain;
+
+}
+
+.card a{
+
+display:block;
+
+text-decoration:none;
+
+}
+
+.back{
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.back a{
+
+background:#0d6efd;
+
+color:white;
+
+padding:12px 30px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-size:18px;
+
+}
+
+.back a:hover{
+
+background:#084298;
+
+}
+
+</style>
 
 </head>
 
@@ -19,331 +125,53 @@
 
 <header>
 
-<h1>
-📚 ملفات PDF
-</h1>
+<h1>دورات شركات التكييف</h1>
 
-<p>
-اختر شركة التكييف لعرض ملفات الـ PDF الخاصة بها
-</p>
+<p>ملفات PDF الخاصة بكل شركة</p>
 
 </header>
 
-<section class="cards">
+<div class="cards">
 
 <div class="card">
 
-<div class="card-icon">🔵</div>
-
-<div class="card-content">
-
-<h2>
-<a href="carrier-pdf.html">
-Carrier
-</a>
-</h2>
-
-<p>
-دورات وكتالوجات شركة كاريير.
-</p>
-
-<a class="card-btn" href="carrier-pdf.html">
-فتح الملفات
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="card-icon">⚪</div>
-
-<div class="card-content">
-
-<h2>
 <a href="sharp-pdf.html">
-Sharp
+
+<img src="logos/sharp.png">
+
 </a>
-</h2>
-
-<p>
-دورات وكتالوجات شارب.
-</p>
-
-<a class="card-btn" href="sharp-pdf.html">
-فتح الملفات
-</a>
-
-</div>
 
 </div>
 
 <div class="card">
 
-<div class="card-icon">🟢</div>
+<a href="carrier-pdf.html">
 
-<div class="card-content">
+<img src="logos/carrier.png">
 
-<h2>
+</a>
+
+</div>
+
+<div class="card">
+
 <a href="union-pdf.html">
-Union Air
-</a>
-</h2>
 
-<p>
-ملفات شركة يونيون إير.
-</p>
+<img src="logos/union-air.png">
 
-<a class="card-btn" href="union-pdf.html">
-فتح الملفات
 </a>
 
 </div>
 
 </div>
 
-<div class="card">
+<div class="back">
 
-<div class="card-icon">🟠</div>
-
-<div class="card-content">
-
-<h2>
-<a href="fresh-pdf.html">
-Fresh
-</a>
-</h2>
-
-<p>
-ملفات شركة فريش.
-</p>
-
-<a class="card-btn" href="fresh-pdf.html">
-فتح الملفات
+<a href="courses.html">
+⬅ الرجوع
 </a>
 
 </div>
-
-</div>
-
-<div class="card">
-
-<div class="card-icon">🔷</div>
-
-<div class="card-content">
-
-<h2>
-<a href="lg-pdf.html">
-LG
-</a>
-</h2>
-
-<p>
-ملفات شركة LG.
-</p>
-
-<a class="card-btn" href="lg-pdf.html">
-فتح الملفات
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="card-icon">🔷</div>
-
-<div class="card-content">
-
-<h2>
-<a href="samsung-pdf.html">
-Samsung
-</a>
-</h2>
-
-<p>
-ملفات شركة سامسونج.
-</p>
-
-<a class="card-btn" href="samsung-pdf.html">
-فتح الملفات
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="card-icon">🟢</div>
-
-<div class="card-content">
-
-<h2>
-<a href="gree-pdf.html">
-Gree
-</a>
-</h2>
-
-<p>
-ملفات شركة جري.
-</p>
-
-<a class="card-btn" href="gree-pdf.html">
-فتح الملفات
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="card-icon">🔵</div>
-
-<div class="card-content">
-
-<h2>
-<a href="midea-pdf.html">
-Midea
-</a>
-</h2>
-
-<p>
-ملفات شركة ميديا.
-</p>
-
-<a class="card-btn" href="midea-pdf.html">
-فتح الملفات
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="card-icon">🔴</div>
-
-<div class="card-content">
-
-<h2>
-<a href="tornado-pdf.html">
-Tornado
-</a>
-</h2>
-
-<p>
-ملفات شركة تورنيدو.
-</p>
-
-<a class="card-btn" href="tornado-pdf.html">
-فتح الملفات
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="card-icon">🟣</div>
-
-<div class="card-content">
-
-<h2>
-<a href="hisense-pdf.html">
-Hisense
-</a>
-</h2>
-
-<p>
-ملفات شركة هايسنس.
-</p>
-
-<a class="card-btn" href="hisense-pdf.html">
-فتح الملفات
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="card-icon">⚫</div>
-
-<div class="card-content">
-
-<h2>
-<a href="daikin-pdf.html">
-Daikin
-</a>
-</h2>
-
-<p>
-ملفات شركة دايكن.
-</p>
-
-<a class="card-btn" href="daikin-pdf.html">
-فتح الملفات
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="card-icon">🟤</div>
-
-<div class="card-content">
-
-<h2>
-<a href="york-pdf.html">
-York
-</a>
-</h2>
-
-<p>
-ملفات شركة يورك.
-</p>
-
-<a class="card-btn" href="york-pdf.html">
-فتح الملفات
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="card-icon">🟩</div>
-
-<div class="card-content">
-
-<h2>
-<a href="mitsubishi-pdf.html">
-Mitsubishi
-</a>
-</h2>
-
-<p>
-ملفات شركة ميتسوبيشي.
-</p>
-
-<a class="card-btn" href="mitsubishi-pdf.html">
-فتح الملفات
-</a>
-
-</div>
-
-</div>
-
-</section>
 
 </body>
 
